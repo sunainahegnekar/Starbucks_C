@@ -1,0 +1,625 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    margin-bottom: 20px;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 60px 20px;
+    border-bottom: 1px solid #ccc;
+    height: 100%;
+  }
+  
+  /* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    margin-bottom: 20px;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 16px 46px;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+  }
+  
+  .navbar-links li {
+    margin: 0 10px;
+  }
+  
+  .navbar-links li a {
+    color: #1F4529;
+    text-decoration: none;
+    font-weight: 20px;
+  
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-links li a {
+    color: #1F4529;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #073014;
+    transition: width 0.4s ease, left 0.4s ease;
+  }
+  
+
+  .navbar-links li a:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  
+  .search-input {
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 0 15px;
+    font-size: 14px;
+  }
+  
+  .search-input::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+  
+  /* Second Div (Brand Header) */
+  .brand-header {
+    background-color: #1F4529;
+    color: white;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .brand-header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links li a {
+    color: #1F4529;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 0 15px;
+    font-size: 14px;
+  }
+  
+  .search-input::placeholder {
+    color: #1F4529;
+    opacity: 0.8;
+  }
+  
+  /* Second Div (Brand Header) */
+  .brand-header {
+    background-color: #1F4529;
+    color: white;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .brand-header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    line-height: 3px;
+    
+  }
+  
+  /* Curations Section Styles */
+  .curations {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    color: #1F4529;
+    gap: 100px;
+   
+  }
+  
+
+  /* Curations Section Hover Effect */
+.image-container .curation-item {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+.image-container img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.image-container img:hover {
+  transform: scale(1.2); /* Zoom-in effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.image-container img:hover::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 140px;
+  height: 140px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #FBD288, #1F4529);
+  z-index: -1;
+  animation: rotateBorder 1s infinite linear; /* Rotating border */
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotateBorder {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.image-container .curation-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: opacity 0.4s ease;
+}
+
+.curation-item:hover .curation-overlay {
+  opacity: 1; /* Overlay becomes visible on hover */
+}
+
+  .curations h2 {
+    font-weight: 300;
+    padding: 30px 0px;
+    font-size: 30px;
+  }
+
+  .curations p{
+    font-weight: 5;
+    color: black;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 20px;
+  }
+  
+  .curation-item {
+    text-align: center;
+    gap: 50px;
+    
+  }
+  
+  .image-container img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    gap: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .image-container p {
+    margin: 0;
+    font-size: 14px;
+    color: #1F4529;
+    font-weight: bold;
+  }
+  
+  /* Barista Recommends Section */
+.barista-recommends {
+  padding: 40px 20px;
+  text-align: center;
+ background: #FBD288;
+}
+
+.barista-recommends h2 {
+  font-size: 28px;
+  color: #1F4529;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Recommendations Layout */
+.recommendations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.recommendation-item {
+background: linear-gradient(45deg, #F8F1D6, #FFE4B5);
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Hover Effect for "Pop-Up" */
+.recommendation-item:hover {
+  transform: translateY(-10px) scale(1.05); /* Move up and scale */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+  z-index: 10; /* Ensures the item appears on top */
+}
+
+/* Circular Image Styling */
+.recommendation-item .image-container img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%; /* Makes the image circular */
+  margin-bottom: 10px;
+}
+
+.recommendation-item p {
+  font-size: 16px;
+  color: #080808;
+  margin: 10px 0 0;
+  font-weight: 500;
+}
+
+/* Cursor and Ripple Styling */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #1F4529; /* Dot color */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+}
+
+.cursor-ripple {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: rgba(31, 69, 41, 0.2); /* Ripple initial color */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0;
+  animation: ripple 0.8s infinite;
+}
+
+/* Keyframes for Ripple Effect */
+@keyframes ripple {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+
+/* Red div with flexbox to split into left and right parts */
+.red {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(138, 13, 13); /* Optional: background color for the container */
+  padding: 20px;
+  height: 100%;
+}
+
+/* Left part containing the image */
+.left img {
+  width: 80%;
+  height: 70%;
+  border-radius: 5%;
+  box-shadow: 0 5px 12px rgba(1, 1, 1, 1);
+}
+
+/* Right part containing the heading and paragraph */
+.right {
+  max-width: 45%; /* Adjust the width of the right section */
+  color: white; /* Optional: Change text color for better readability */ 
+}
+
+.right h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.right p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Hover effect for the image */
+.left img:hover {
+  transform: scale(1.1) rotate(5deg); /* Zoom in and slightly rotate */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Add shadow for a 3D effect */
+}
+
+
+/* Green div with flexbox, same as red div but swapped image and content */
+.green {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00754A; /* Optional: background color for the container */
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Add shadow for a 3D effect */
+
+}
+
+/* G-left part containing the image (this time it is on the right in the HTML structure) */
+.G-left {
+  position: relative;
+  overflow: hidden; /* Ensures the image doesn't overflow when it zooms */
+}
+
+.G-left img {
+  width: 95%;
+  height: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transformations */
+  border-radius: 10px; /* Optional: rounded corners for the image */
+}
+
+/* Hover effect for the image */
+.G-left img:hover {
+  transform: scale(1.1) rotate(5deg); /* Zoom in and slightly rotate */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Add shadow for a 3D effect */
+}
+
+/* G-right part containing the heading and paragraph (this time it is on the left) */
+.G-right {
+  max-width: 45%; /* Adjust the width of the right section */
+  color: white; /* Optional: Change text color for better readability */
+}
+
+.G-right h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.G-right p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Pink div, same structure as red div */
+.pink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(138, 13, 13); /* Optional: background color for the container */
+  padding: 20px;
+}
+
+/* P-left part containing the image (same as red div) */
+.P-left {
+  position: relative;
+  overflow: hidden; /* Ensures the image doesn't overflow when it zooms */
+}
+
+.P-left img {
+  width: 80%;
+  height: 100%;
+  max-width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transformations */
+  border-radius: 8px; /* Optional: rounded corners for the image */
+}
+
+/* Hover effect for the image */
+.P-left img:hover {
+  transform: scale(1.1) rotate(5deg); /* Zoom in and slightly rotate */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Add shadow for a 3D effect */
+}
+
+/* P-right part containing the heading and paragraph (same as red div) */
+.P-right {
+  max-width: 45%; /* Adjust the width of the right section */
+  color: white; /* Optional: Change text color for better readability */
+}
+
+.P-right h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.P-right p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+
+}
+
+/* BUlk*/
+.light-gray {
+  background-color: lightgray;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+}
+.bulk-left img {
+  width: 70%; /* or specific width like 200px */
+  height: 70%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(1, 1, 1, 1);
+}
+.bulk-right p {
+  font-size: 20px;
+  color: #333;
+  max-width: 500px;
+  text-align: left;
+  line-height: 30px;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  display: block;
+}
+.social-icons {
+  margin-bottom: 40px;
+  text-align: left;
+}
+.social-icon {
+  margin: 0 10px;
+}
+.social-icon img {
+  width: 40px;
+  height: 40px;
+  align-items: left;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.links ul li {
+  margin: 10px 0;
+}
+.links ul li a {
+  color: #333;
+  text-decoration: none;
+}
+.links ul li a:hover {
+  text-decoration: underline;
+}
+.copyright {
+  margin-top: 50px;
+  text-align: left;
+}
+
+
