@@ -697,17 +697,17 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
   .social-icons {
-    justify-content: center;
-    text-align: center;
+    justify-content: left;
+    text-align: left;
     margin-bottom: 20px;
   }
 
   .links ul {
-    text-align: center;
+    text-align: left;
   }
 
   .copyright {
-    text-align: center;
+    text-align: left;
   }
 }
 
