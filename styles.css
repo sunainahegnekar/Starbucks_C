@@ -702,12 +702,20 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
   }
 
+  .social-icons img{
+  width: 20px;
+  height: 20px;
+  }
+
   .links ul {
     text-align: left;
+    font-size: small;
   }
 
   .copyright {
     text-align: left;
+    font-size: small;
+
   }
 }
 
