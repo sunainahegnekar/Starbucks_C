@@ -703,18 +703,18 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
   .social-icons img{
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   }
 
   .links ul {
     text-align: left;
-    font-size: small;
+    font-size: xx-small;
   }
 
   .copyright {
     text-align: left;
-    font-size: small;
+    font-size: xx-small;
 
   }
 }
